@@ -1,0 +1,75 @@
+
+<!-- cart header -->
+<div class="offcanvas-header">
+  <h3 class="offcanvas-title fw-bolder text-primary" id="cartOffcanvasLabel">CART</h3>
+  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+</div>
+
+<!-- cart body -->
+<div class="offcanvas-body">
+  <form id="chatForm position-relative">
+    <!-- cart list -->
+    <div class="row m-0 mb-5">
+      <!-- product 1 -->
+      <div class="col-24 d-flex align-items-center p-0 mb-5">
+        <!-- product image -->
+        <div class="flex-shrink-0 rounded-3 overflow-hidden p-0 cart-img-box me-4">
+          <img src="imgs/products-1.webp" alt="product-img-1" class="object-fit w-100 h-100">
+        </div>
+
+        <div class="flex-grow-1">
+          <!-- product name -->
+          <div class="col-24">
+            <p class="mb-3 fw-bolder">100% Plant Squalane</p>
+          </div>
+
+          <!-- product quantity and price -->
+          <div class="col-24 d-flex justify-content-between align-items-center">
+            <div class="me-5">
+              <input type="number" class="form-control rounded-pill text-center" name="qty" id="qty" value="1">
+            </div>
+            <p class="text-end me-3">$24.99</p>
+            <button type="button" class="btn btn-link text-gray-600"><i class="fa-solid fa-circle-minus"></i></button>
+          </div>
+
+        </div> 
+      </div>
+
+      <!-- product 2 -->
+      <div class="col-24 d-flex align-items-center p-0 mb-5">
+        <!-- product image -->
+        <div class="flex-shrink-0 rounded-3 overflow-hidden p-0 cart-img-box me-4">
+          <img src="imgs/products-2.webp" alt="product-img-1" class="object-fit w-100 h-100">
+        </div>
+
+        <div class="flex-grow-1">
+          <!-- product name -->
+          <div class="col-24">
+            <p class="mb-3 fw-bolder">Daily Moisturizer - RePhil</p>
+          </div>
+
+          <!-- product quantity and price -->
+          <div class="col-24 d-flex justify-content-between align-items-center">
+            <div class="me-5">
+              <input type="number" class="form-control rounded-pill text-center" name="qty" id="qty" value="1">
+            </div>
+            <p class="text-end me-3">$19.99</p>
+            <button type="button" class="btn btn-link text-gray-600"><i class="fa-solid fa-circle-minus"></i></button>
+          </div>
+          
+        </div> 
+      </div>
+    </div>
+
+    <!-- action button (check out) -->
+    <div class="row m-0 border-top position-absolute fixed-bottom">
+      <div class="col-24 px-6 py-5 d-flex flex-column">
+        <small class="text-end mb-2">SUBTOTAL</small>
+        <h5 class="text-end mb-4">$44.98</h5>
+        <button type="submit" class="btn btn-primary btn-lg rounded-pill">Checkout
+        </button>
+      </div>
+    </div>
+
+  </form>
+</div>

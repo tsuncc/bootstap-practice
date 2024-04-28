@@ -22,3 +22,10 @@ a {
 #nav-container img {
   height: 2.5rem;
 }
+
+
+/* cart */
+.cart-img-box {
+  width: 7rem;
+  height: 7rem;
+}

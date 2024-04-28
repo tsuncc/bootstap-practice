@@ -20,17 +20,20 @@
     <!-- navbar (nav.html / load-nav.js) -->
     <nav id="nav-container" class="navbar navbar-expand-lg navbar-light bg-light sticky-top"></nav>
 
-    <!-- login modal (login.html / login-nav.js) -->
+    <!-- login modal (login.html / load-login.js) -->
     <form action="" method="get" id="memberLogin"></form>
+
+    <!-- cart (cart.html / load-cart.js) -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas" aria-labelledby="cartOffcanvasLabel" style="margin-top: 6rem;"></div>
 
     <!-- faq start -->
     <div class="container my-8">
       <div class="row">
         <div class="col-12">
           <h2 class="mb-4 text-center">FAQ</h2>
-          <!-- 手风琴容器 -->
+          <!-- accordion contents from faq.js -->
           <div class="accordion" id="accordionExample">
-            <!-- 手风琴内容将由 JavaScript 动态生成 -->
+            <!-- accordion contents from faq.js -->
           </div>
         </div>
       </div>
@@ -49,6 +52,7 @@
   <!-- load nav / login / footer -->
   <script src="js/load-nav.js"></script>
   <script src="js/load-login.js"></script>
+  <script src="js/load-cart.js"></script>
   <script src="js/load-footer.js"></script>
 
   <!-- js for this page -->
