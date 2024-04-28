@@ -1,0 +1,28 @@
+body {
+  margin-top: 6rem;
+}
+
+/* footer styles */
+.socialIcon {
+  width: 3rem;
+  height: 3rem;
+}
+
+.socialIcon>i {
+  line-height: 3rem;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+
+/* navigation styles */
+#navigationBar {
+  height: 6rem;
+}
+
+#navigationBar img {
+  height: 2.5rem;
+}

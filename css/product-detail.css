@@ -1,0 +1,15 @@
+.cart-form input {
+  height: 3rem;
+}
+
+.cart-form button {
+  height: 3rem;
+}
+
+.btn-square {
+  aspect-ratio: 1;
+}
+
+.btn-add {
+  width: 60%;
+}
