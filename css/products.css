@@ -1,3 +1,7 @@
 #productBanner {
   height: 15rem;
 }
+
+.product-card {
+  cursor: pointer;
+}

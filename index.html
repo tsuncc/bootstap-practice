@@ -15,12 +15,16 @@
   <main class="flex-shrink-0">
     <!-- MAIN START -->
 
-    <!-- navbar -->
-    <nav id="nav-container"></nav>
+    <!-- navbar (nav.html / load-nav.js) -->
+    <nav id="nav-container" class="navbar navbar-expand-lg navbar-light bg-light sticky-top"></nav>
 
-    <div class="overflow-hidden banner">
+    <!-- login modal (login.html / login-nav.js) -->
+    <form action="" method="get" id="memberLogin"></form>
+
+    <!-- banner -->
+    <section class="overflow-hidden banner">
       <img src="imgs/banner-01.webp" alt="" class="w-100">
-    </div>
+    </section>
 
     <!-- section 1 start -->
     <section class="bg-platinum">
@@ -78,8 +82,9 @@
   <!-- footer -->
   <footer id="footer-container" class="bg-primary mt-auto"></footer>
 
-  <!-- load nav / footer -->
+  <!-- load nav / login / footer -->
   <script src="js/load-nav.js"></script>
+  <script src="js/load-login.js"></script>
   <script src="js/load-footer.js"></script>
 
   <!-- js for this page -->

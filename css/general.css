@@ -1,7 +1,3 @@
-body {
-  margin-top: 6rem;
-}
-
 /* footer styles */
 .socialIcon {
   width: 3rem;
@@ -19,10 +15,10 @@ a {
 
 
 /* navigation styles */
-#navigationBar {
+#nav-container {
   height: 6rem;
 }
 
-#navigationBar img {
+#nav-container img {
   height: 2.5rem;
 }
