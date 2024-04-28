@@ -23,6 +23,15 @@ a {
   height: 2.5rem;
 }
 
+.nav-ul {
+  letter-spacing: 2px;
+}
+
+.nav-ul li {
+  margin-left: 1.25rem;
+}
+
+
 
 /* cart */
 .cart-img-box {

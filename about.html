@@ -4,10 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
+  <title>FAQ</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
   <link rel="stylesheet" href="css/link.css">
+  <link rel="stylesheet" href="css/products.css">
+
 
 </head>
 
@@ -24,17 +26,58 @@
     <!-- cart (cart.html / load-cart.js) -->
     <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas" aria-labelledby="cartOffcanvasLabel" style="margin-top: 6rem;"></div>
 
-    <!-- about  -->
-    to do
+
+    
+    <div class="container py-8">
+      <div class="row">
+
+          <!-- TABS START -->
+          <div class="d-flex align-items-start">
+            <div class="nav flex-column nav-pills me-3 col-4 me-6" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <button class="nav-link active" id="v-pills-about-tab" data-bs-toggle="pill" data-bs-target="#v-pills-about" type="button" role="tab" aria-controls="v-pills-about" aria-selected="true">About Us</button>
+              <button class="nav-link" id="v-pills-faq-tab" data-bs-toggle="pill" data-bs-target="#v-pills-faq" type="button" role="tab" aria-controls="v-pills-faq" aria-selected="false">FAQ's</button>
+              <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">TO DO 2</button>
+              <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">TO DO 3</button>
+            </div>
+
+            <div class="tab-content flex-fill" id="v-pills-tabContent">
+              <!-- ABOUT US START -->
+              <div class="tab-pane fade show active" id="v-pills-about" role="tabpanel" aria-labelledby="v-pills-about-tab">content 1</div>
+              <!-- ABOUT US END -->
+
+              <!-- FAQ START -->
+              <div class="tab-pane fade" id="v-pills-faq" role="tabpanel" aria-labelledby="v-pills-faq-tab">
+                <h2 class="mb-4">FAQ</h2>
+                <!-- accordion -->
+                <div class="accordion" id="faqAccordion">
+                  <!-- accordion content from faq.js -->
+                </div>
+              </div>
+              <!-- FAQ END -->
+
+              <!-- TODO 3 START -->
+              <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">content 3</div>
+              <!-- TODO 3 END -->
+
+              <!-- TODO 4 START -->
+              <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">content 4</div>
+              <!-- TODO 4 END -->
+            </div>
+          </div>
+          <!-- TABS END -->
+
+
+      </div>
+    </div>
+
+
 
 
 
 
     <!-- MAIN END -->
   </main>
-
-
-
+  
   <!-- footer -->
   <footer id="footer-container" class="bg-primary mt-auto"></footer>
 
@@ -45,12 +88,14 @@
   <script src="js/load-footer.js"></script>
 
   <!-- js for this page -->
-  
+  <script src="js/faq.js"></script>
+
 
   <!-- bootstrap js link -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
     crossorigin="anonymous"></script>
+
 </body>
 
 </html>
