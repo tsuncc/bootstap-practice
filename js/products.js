@@ -3,6 +3,7 @@ const products = [
     {
         id: 1,
         name: "100% Plant Squalane",
+        category: "Skin & body",
         price: "$24.99",
         listImage: "imgs/products-1.webp",
         images: ["imgs/products-1-1.webp", "imgs/products-1-2.webp", "imgs/products-1-3.webp"],
@@ -15,6 +16,7 @@ const products = [
     {
         id: 2,
         name: "Daily Moisturizer - RePhil",
+        category: "Skin & body",
         price: "$19.99",
         listImage: "imgs/products-2.webp",
         images: ["imgs/products-2-1.webp", "imgs/products-2-2.webp", "imgs/products-2-3.webp"],
@@ -28,6 +30,7 @@ const products = [
     {
       id: 3,
       name: "Shaving Cream",
+      category: "Hair",
       price: "$14.99",
       listImage: "imgs/products-3.webp",
       images: ["imgs/products-3-1.webp", "imgs/products-3-2.webp", "imgs/products-3-3.webp"],

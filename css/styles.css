@@ -7665,7 +7665,7 @@ textarea.form-control-lg {
   top: 0;
   right: 0;
   left: 0;
-  height: 30vh;
+  height: 90vh;
   max-height: 100%;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   transform: translateY(-100%);
@@ -7674,7 +7674,7 @@ textarea.form-control-lg {
 .offcanvas-bottom {
   right: 0;
   left: 0;
-  height: 30vh;
+  height: 90vh;
   max-height: 100%;
   border-top: 1px solid rgba(0, 0, 0, 0.2);
   transform: translateY(100%);
@@ -9560,6 +9560,30 @@ textarea.form-control-lg {
 
 .rounded-bottom-end-4 {
   border-bottom-right-radius: 6rem !important;
+}
+
+.rounded-bottom-start {
+  border-bottom-left-radius: 0rem !important;
+}
+
+.rounded-bottom-start-0 {
+  border-bottom-left-radius: 0 !important;
+}
+
+.rounded-bottom-start-1 {
+  border-bottom-left-radius: 1.25rem !important;
+}
+
+.rounded-bottom-start-2 {
+  border-bottom-left-radius: 0rem !important;
+}
+
+.rounded-bottom-start-3 {
+  border-bottom-left-radius: 2rem !important;
+}
+
+.rounded-bottom-start-4 {
+  border-bottom-left-radius: 6rem !important;
 }
 
 .visible {

@@ -1,7 +1,11 @@
+* {
+  letter-spacing: 0.12rem;
+  line-height: 1.75;
+}
+
 a {
   text-decoration: none;
 }
-
 
 ul, li, ol {
   margin: 0;
@@ -42,4 +46,29 @@ ul, li, ol {
 .cart-img-box {
   width: 7rem;
   height: 7rem;
+}
+
+/* promo */
+.promo-banner {
+  height: 24rem;
+}
+
+.object-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.promo-banner h2 {
+  font-size: 5rem;
+}
+
+.promo-banner h4 {
+  font-size: 2rem;
+}
+
+
+.promo-img {
+  aspect-ratio: 3 / 4;
 }

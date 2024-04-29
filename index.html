@@ -8,6 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
   <link rel="stylesheet" href="css/link.css">
+  <link rel="stylesheet" href="css/index.css">
 
 </head>
 
@@ -24,14 +25,29 @@
     <!-- cart (cart.html / load-cart.js) -->
     <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas" aria-labelledby="cartOffcanvasLabel" style="margin-top: 6rem;"></div>
 
+
     <!-- banner -->
-    <section class="overflow-hidden banner">
-      <img src="imgs/banner-01.webp" alt="" class="w-100">
+    <section class="banner">
+      <div class="container">
+        <div class="row pt-8">
+          <div class="col-24 col-md-12 mt-8 text-secondary">
+            <h1 class="mb-4">Meet Phil’s!</h1>
+            <p>Phil’s is all about creating multipurpose, clinically tested personal care and shaving products delivered in
+              packaging with our collective future in mind. The beauty industry pours billions of pounds of plastic into landfills
+              each year. Ph*ck that.</p>
+          </div>
+        </div>
+        </div>
+
+
     </section>
 
-    <!-- section 1 start -->
+
+
+
+    <!-- section 2 start -->
     <section class="bg-secondary">
-      <div class="container px-5 px-md-2 py-6">
+      <div class="container px-2  py-8">
         <div class="row align-items-center">
           <div class="col-24 col-lg-10">
             <img src="imgs/home-01.webp" alt="" class="w-100 rounded-top-start-4 rounded-bottom-end-4">
@@ -48,14 +64,14 @@
         </div>
       </div>
     </section>
-    <!-- section 1 end -->
+    <!-- section 2 end -->
 
-    <!-- section 2 start -->
+    <!-- section 3 start -->
     <section>
-      <div class="container px-5 px-md-2 py-6">
+      <div class="container px-2  py-8">
         <div class="row align-items-center">
           <div class="col-24 col-lg-14 pe-lg-5 mt-5 mt-lg-0 d-flex flex-column align-items-end">
-            <h1 class="text-primary mb-4">Clinical &<br>Ethical<br>Products.</h1>
+            <h1 class="text-primary mb-4 text-end">Clinical &<br>Ethical<br>Products.</h1>
             <p class="mb-4 text-end">Our proprietary RePhil Jars utilize kitchenware technology to make them dishwasher
               safe, top
               rack, so you
@@ -71,15 +87,27 @@
         </div>
       </div>
     </section>
-    <!-- section 2 end -->
+    <!-- section 3 end -->
+    
+    <!-- promotion button -->
+    <!-- <button type="button" class="btn btn-primary position-fixed start-0 bottom-50 p-3 pe-4 rounded-start rounded-1 shadow" data-bs-toggle="modal" data-bs-target="#promoModal">
+      <i class="fa-solid fa-tags"></i>
+    </button> -->
 
+    <!-- promotion (promo.html / promo-cart.js) -->
+    <!-- <div class="modal fade" id="promoModal" tabindex="-1" aria-labelledby="promoModalLabel" aria-hidden="true">
+    </div> -->
 
+    <button class="btn btn-primary position-fixed start-0 bottom-50 p-3 pe-4 rounded-start rounded-1 shadow" type="button" data-bs-toggle="offcanvas" data-bs-target="#promoOffcanvas" aria-controls="promoOffcanvas">
+      <i class="fa-solid fa-tags"></i>
+    </button>
 
+    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="promoOffcanvas" aria-labelledby="promoOffcanvasLabel">
+    </div>
 
 
     <!-- MAIN END -->
   </main>
-
 
 
   <!-- footer -->
@@ -89,6 +117,7 @@
   <script src="js/load-nav.js"></script>
   <script src="js/load-login.js"></script>
   <script src="js/load-cart.js"></script>
+  <script src="js/load-promo.js"></script>
   <script src="js/load-footer.js"></script>
   
   <!-- js for this page -->
