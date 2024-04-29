@@ -26,5 +26,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function redirectToDetail(productId) {
   localStorage.setItem('currentProduct', productId);
-  window.location.href = 'products-detail.html';
+  window.location.href = 'product-details.html';
 }
