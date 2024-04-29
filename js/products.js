@@ -2,7 +2,7 @@
 const products = [
     {
         id: 1,
-        name: "100% Plant Squalane",
+        name: "Plant Squalane",
         category: "Skin & body",
         price: "$24.99",
         listImage: "imgs/products-1.webp",
@@ -15,7 +15,32 @@ const products = [
 
     {
         id: 2,
-        name: "Daily Moisturizer - RePhil",
+        name: "Daily Moisturizer",
+        category: "Skin & body",
+        price: "$19.99",
+        listImage: "imgs/products-2.webp",
+        images: ["imgs/products-2-1.webp", "imgs/products-2-2.webp", "imgs/products-2-3.webp"],
+        size: "2.7 FL OZ/80 ML ALUMINUM POD",
+        ingredients: "Water/Aqua, Cetearyl Alcohol, Helianthus Annuus (Sunflower) Seed Oil Glyceryl Stearate Citrate",
+        description: "The Daily Moisturizer was formulated to work both day and night to help simplify your routine.  With barrier protecting prebiotics, moisture locking hyaluronic acid, and soothing macula oil this super soothing formula has you covered 24/7.",
+        usage: "Apply a generous amount to clean skin, gently smoothing it over face and neck in the morning and night.  Can also be used on hands."
+    },
+    {
+        id: 2,
+        name: "id 2",
+        category: "Skin & body",
+        price: "$24.99",
+        listImage: "imgs/products-1.webp",
+        images: ["imgs/products-1-1.webp", "imgs/products-1-2.webp", "imgs/products-1-3.webp"],
+        size: "4 FL OZ/ 118ML ALUMINUM TUBE",
+        ingredients: "100% Plant Squalane",
+        description: "So rich with moisturizing shea butter we should just call it a shea-ving cream. Niacinamide helps calm irritated skin.",
+        usage: "Twist top off capsule, squeeze onto fingertips and apply to face and neck. Capsule can be dissolved in hot water after use."
+    },
+
+    {
+        id: 3,
+        name: "id 3",
         category: "Skin & body",
         price: "$19.99",
         listImage: "imgs/products-2.webp",
@@ -26,9 +51,8 @@ const products = [
         usage: "Apply a generous amount to clean skin, gently smoothing it over face and neck in the morning and night.  Can also be used on hands."
     },
 
-
     {
-      id: 3,
+      id: 7,
       name: "Shaving Cream",
       category: "Hair",
       price: "$14.99",

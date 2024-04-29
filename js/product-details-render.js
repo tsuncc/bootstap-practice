@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const productId = localStorage.getItem('currentProduct');
+    let productId = 1;
+    productId = localStorage.getItem('currentProduct');
     const product = products.find(p => p.id == parseInt(productId));
 
     if (product) {

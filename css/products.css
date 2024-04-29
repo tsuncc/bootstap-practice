@@ -5,3 +5,9 @@
 .product-card {
   cursor: pointer;
 }
+
+.icon-button {
+  width: 3rem;
+  height: 3rem;
+ }
+

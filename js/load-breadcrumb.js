@@ -1,35 +1,35 @@
 document.addEventListener("DOMContentLoaded", function() {
+  const referrer = document.referrer;
   const pathname = window.location.pathname;
-  let breadcrumbPaths;
+  let breadcrumbPaths = [{ name: 'Home', url: 'index.html' }];
 
-  if (pathname.includes("products.html")) {
-    breadcrumbPaths = [
-      { name: 'Home', url: 'index.html' },
-      { name: 'Products', url: '#' }
-    ];
-  } else if (pathname.includes("product-details.html")) {
-    // 取得 product name
-    const productId = localStorage.getItem('currentProduct');
-    const product = products.find(p => p.id == parseInt(productId));
+  if (pathname.includes("product-details.html")) {
+      const productId = localStorage.getItem('currentProduct');
+      const product = products.find(p => p.id === parseInt(productId, 10));
+      const previousSegment = referrer ? new URL(referrer).pathname.split('/').pop() : '';
 
-    breadcrumbPaths = [
-      { name: 'Home', url: 'index.html' },
-      { name: 'Products', url: 'products.html' },
-      { name: `${product.name}`, url: '#' }
-    ];
-  } else if (pathname.includes("about.html")) {
-    breadcrumbPaths = [
-      { name: 'Home', url: 'index.html' },
-      { name: 'About', url: '#' }
-    ];
+      if (product) {
+          const categoryMap = {
+            'products-skin-body.html': 'Skin & Body',
+            'products-hair.html': 'Hair'
+          };
+          const category = categoryMap[previousSegment] || 'All Products';
+          breadcrumbPaths.push({ name: category, url: previousSegment || 'products-all.html' });
+          breadcrumbPaths.push({ name: product.name, url: '#' });
+      }
   } else {
-    breadcrumbPaths = [
-      { name: 'Home', url: '#' }
-    ];
+      const pageMap = {
+        'products-all.html': 'All Products',
+        'products-skin-body.html': 'Skin & body',
+        'products-hair.html': 'Hair',
+        'about.html': 'About'
+      };
+      const pageName = pageMap[pathname.split('/').pop()] || 'Product Details';
+      breadcrumbPaths.push({ name: pageName, url: '#' });
   }
+
   updateBreadcrumbs(breadcrumbPaths);
 });
-
 
 function updateBreadcrumbs(paths) {
   const breadcrumbContainer = document.querySelector("#myBreadcrumb .breadcrumb");
@@ -37,17 +37,9 @@ function updateBreadcrumbs(paths) {
 
   paths.forEach((path, index) => {
       const li = document.createElement('li');
-      li.className = 'breadcrumb-item';
-      if (index === paths.length - 1) {
-          li.classList.add('active');
-          li.setAttribute('aria-current', 'page');
-          li.textContent = path.name;
-      } else {
-          const a = document.createElement('a');
-          a.href = path.url;
-          a.textContent = path.name;
-          li.appendChild(a);
-      }
+      li.className = 'breadcrumb-item' + (index === paths.length - 1 ? ' active' : '');
+      li.setAttribute('aria-current', (index === paths.length - 1 ? 'page' : undefined));
+      li.innerHTML = index === paths.length - 1 ? path.name : `<a href="${path.url}">${path.name}</a>`;
       breadcrumbContainer.appendChild(li);
   });
 }
