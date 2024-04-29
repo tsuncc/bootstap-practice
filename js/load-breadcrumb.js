@@ -2,35 +2,34 @@ document.addEventListener("DOMContentLoaded", function() {
   const pathname = window.location.pathname;
   let breadcrumbPaths;
 
-  // 取得 product name
-  const productId = localStorage.getItem('currentProduct');
-  const product = products.find(p => p.id == parseInt(productId));
-  
-  switch (true) {
-    case pathname.includes("product-details.html"):
-      breadcrumbPaths = [
-        { name: 'Home', url: 'index.html' },
-        { name: 'Products', url: 'products.html' },
-        { name: `${product.name}`, url: '#' }
-      ];
-      break;
+  if (pathname.includes("products.html")) {
+    breadcrumbPaths = [
+      { name: 'Home', url: 'index.html' },
+      { name: 'Products', url: '#' }
+    ];
+  } else if (pathname.includes("product-details.html")) {
+    // 取得 product name
+    const productId = localStorage.getItem('currentProduct');
+    const product = products.find(p => p.id == parseInt(productId));
 
-    case pathname.includes("products.html"):
-      breadcrumbPaths = [
-        { name: 'Home', url: 'index.html' },
-        { name: 'Products', url: '#' }
-      ];
-      break;
-
-    default:
-      breadcrumbPaths = [
-        { name: 'Home', url: '#' }
-      ];
-      break;
+    breadcrumbPaths = [
+      { name: 'Home', url: 'index.html' },
+      { name: 'Products', url: 'products.html' },
+      { name: `${product.name}`, url: '#' }
+    ];
+  } else if (pathname.includes("about.html")) {
+    breadcrumbPaths = [
+      { name: 'Home', url: 'index.html' },
+      { name: 'About', url: '#' }
+    ];
+  } else {
+    breadcrumbPaths = [
+      { name: 'Home', url: '#' }
+    ];
   }
-
   updateBreadcrumbs(breadcrumbPaths);
 });
+
 
 function updateBreadcrumbs(paths) {
   const breadcrumbContainer = document.querySelector("#myBreadcrumb .breadcrumb");
