@@ -12,6 +12,27 @@ ul, li, ol {
   padding: 0;
 }
 
+/* 常用 */
+.z-index-1 {
+  z-index: 1;
+}
+
+.z-index-2 {
+  z-index: 2;
+}
+
+.text-4r {
+  font-size: 4rem;
+  font-weight: bolder;
+}
+
+
+.text-5r {
+  font-size: 5rem;
+  font-weight: bolder;
+}
+
+
 /* footer styles */
 .socialIcon {
   width: 3rem;
@@ -68,7 +89,8 @@ ul, li, ol {
   font-size: 2rem;
 }
 
-
 .promo-img {
   aspect-ratio: 3 / 4;
 }
+
+

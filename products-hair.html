@@ -27,7 +27,7 @@
     <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas" aria-labelledby="cartOffcanvasLabel" style="margin-top: 6rem;"></div>
 
     <!-- breadcrumb -->
-    <nav aria-label="breadcrumb" id="myBreadcrumb">
+    <nav aria-label="breadcrumb" id="myBreadcrumb" class="container">
       <ol class="breadcrumb container py-4 mb-0">
         <!-- data from load-breadcrumb.js -->
       </ol>
@@ -42,6 +42,14 @@
     </section>
     <!-- product list - Hair end -->
 
+    <!-- PROMOTION -->
+    <button class="btn btn-primary-50 position-fixed start-0 bottom-0 p-3 mb-8 rounded-start rounded-4 shadow text-primary"
+    type="button" data-bs-toggle="offcanvas" data-bs-target="#promoOffcanvas" aria-controls="promoOffcanvas">
+    <i class="fa-solid fa-tags"></i>
+    </button>
+    <div class="offcanvas offcanvas-bottom bg-secondary rounded-bottom rounded-3" tabindex="-1" id="promoOffcanvas" aria-labelledby="promoOffcanvasLabel">
+      <!-- promotion content from load-promo.js -->
+    </div>
 
 
     <!-- MAIN END -->
@@ -50,11 +58,12 @@
   <!-- footer -->
   <footer id="footer-container" class="bg-primary mt-auto"></footer>
 
-  <!-- load nav / login / footer -->
+  <!-- load general html -->
   <script src="js/load-nav.js"></script>
   <script src="js/load-login.js"></script>
   <script src="js/load-cart.js"></script>
   <script src="js/load-breadcrumb.js"></script>
+  <script src="js/load-promo.js"></script>
   <script src="js/load-footer.js"></script>
 
   <!-- js for this page -->

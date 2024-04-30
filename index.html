@@ -13,113 +13,133 @@
 </head>
 
 <body class="d-flex flex-column h-100">
-  <main class="flex-shrink-0">
-    <!-- MAIN START -->
 
+  <main class="flex-shrink-01">
+    <!-- LOAD HEADER START -->
     <!-- navbar (nav.html / load-nav.js) -->
     <nav id="nav-container" class="navbar navbar-expand-lg navbar-light bg-light sticky-top"></nav>
-
+  
     <!-- login modal (login.html / load-login.js) -->
     <form action="" method="get" id="memberLogin"></form>
-    
+  
     <!-- cart (cart.html / load-cart.js) -->
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas" aria-labelledby="cartOffcanvasLabel" style="margin-top: 6rem;"></div>
-
-
-    <!-- banner -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas" aria-labelledby="cartOffcanvasLabel"
+      style="margin-top: 6rem;"></div>
+    <!-- LOAD HEADER END -->
+  
+    <!-- BANNER -->
     <section class="banner">
       <div class="container">
-        <div class="row pt-8">
-          <div class="col-24 col-md-12 mt-8 text-secondary">
-            <h1 class="mb-4">Meet Phil’s!</h1>
-            <p>Phil’s is all about creating multipurpose, clinically tested personal care and shaving products delivered in
-              packaging with our collective future in mind. The beauty industry pours billions of pounds of plastic into landfills
+        <div class="row">
+          <div class="col-24 col-md-12 text-secondary mt-8">
+            <h1 class="text-4r mb-5">Meet Phil’s!</h1>
+            <p>Phil’s is all about creating multipurpose, clinically tested personal care and shaving products delivered
+              in
+              packaging with our collective future in mind. The beauty industry pours billions of pounds of plastic into
+              landfills
               each year. Ph*ck that.</p>
           </div>
         </div>
-        </div>
-
-
+      </div>
     </section>
 
-
-
-
-    <!-- section 2 start -->
+    <!-- SLOGAN -->
+    <div class="container py-8">
+      <div class="row py-4 align-items-center">
+        <div class="col-24 col-md-8">
+          <h1 class="text-4r mb-5 mb-md-0">Ph*ck Plastic.</h1>
+        </div>
+        <div class="col-24 col-md-16">
+          <p>Supercharged performance personal care on a mission to slash your plastic footprint. Low impact packaging, high impact results.</p>
+        </div>
+      </div>
+    </div>
+  
+    <!-- IMAGE & DESCRIPTION 1 -->
     <section class="bg-secondary">
       <div class="container px-2  py-8">
-        <div class="row align-items-center">
+        <div class="row align-items-center py-8">
           <div class="col-24 col-lg-10">
-            <img src="imgs/home-01.webp" alt="" class="w-100 rounded-top-start-4 rounded-bottom-end-4">
+            <img src="imgs/home-01.webp" alt="" class="w-100 rounded-top-start rounded-bottom-end rounded-4">
           </div>
-          <div class="col-24 col-lg-14 ps-lg-5 mt-5 mt-lg-0">
-            <h1 class="text-primary mb-4">Wash.<br>Reuse.<br>RePhil.</h1>
-            <p class="mb-4">Our proprietary RePhil Jars utilize kitchenware technology to make them dishwasher safe, top
-              rack, so you
-              can use them again and again. Think kitchenware for your skincare.</p>
-
-            <button type="button" class="btn btn-accent btn-outline-primary rounded-pill px-4 p-2">SHOP ONLINE<i
-                class="fa-solid fa-arrow-right-long ms-4"></i></button>
+          <div class="col-24 col-lg-14 ps-lg-6 mt-5 mt-lg-0">
+            <h1 class="text-primary mb-4 text-4r">Wash.<br>Reuse.<br>RePhil.</h1>
+            <p class="mb-4">Our proprietary RePhil Jars utilize kitchenware technology to make them dishwasher safe, top rack, so you can use them again and again. Think kitchenware for your skincare.</p>
+  
+            <a type="button" href="products-all.html" class="btn btn-accent btn-outline-primary rounded-pill px-4 p-2">
+              SHOP ONLINE<i class="fa-solid fa-arrow-right-long ms-4"></i>
+            </a>
           </div>
         </div>
       </div>
     </section>
-    <!-- section 2 end -->
 
-    <!-- section 3 start -->
+  
+    <!-- IMAGE & DESCRIPTION 2 -->
     <section>
       <div class="container px-2  py-8">
-        <div class="row align-items-center">
-          <div class="col-24 col-lg-14 pe-lg-5 mt-5 mt-lg-0 d-flex flex-column align-items-end">
-            <h1 class="text-primary mb-4 text-end">Clinical &<br>Ethical<br>Products.</h1>
-            <p class="mb-4 text-end">Our proprietary RePhil Jars utilize kitchenware technology to make them dishwasher
-              safe, top
-              rack, so you
-              can use them again and again. Think kitchenware for your skincare.</p>
-
-            <button type="button" class="btn btn-accent btn-outline-primary rounded-pill px-4 p-2 mb-5 m-lg-0">SHOP
-              ONLINE<i class="fa-solid fa-arrow-right-long ms-4"></i></button>
+        <div class="row align-items-center py-8">
+          <div class="col-24 col-lg-14 pe-lg-6 mt-5 mt-lg-0 d-flex flex-column align-items-end">
+            <h1 class="text-primary mb-4 text-end text-4r">Clinical &<br>Ethical<br>Products.</h1>
+            <p class="mb-4 text-end">Our products are third-party clinically tested. We are proud SEDEX member's and each of our products are ethically manufactured in third-party audited facilities with full transparency</p>
+  
+            <a type="button" href="products-all.html" class="btn btn-accent btn-outline-primary rounded-pill px-4 p-2 mb-6 m-lg-0">
+              SHOP ONLINE<i class="fa-solid fa-arrow-right-long ms-4"></i>
+            </a>
           </div>
-
+  
           <div class="col-24 col-lg-10">
-            <img src="imgs/home-01.webp" alt="" class="w-100 rounded-top-start-4 rounded-bottom-end-4">
+            <img src="imgs/home-01.webp" alt="" class="w-100 rounded-top-end rounded-bottom-start rounded-4">
           </div>
         </div>
       </div>
     </section>
-    <!-- section 3 end -->
     
-    <!-- promotion button -->
-    <!-- <button type="button" class="btn btn-primary position-fixed start-0 bottom-50 p-3 pe-4 rounded-start rounded-1 shadow" data-bs-toggle="modal" data-bs-target="#promoModal">
-      <i class="fa-solid fa-tags"></i>
-    </button> -->
-
-    <!-- promotion (promo.html / promo-cart.js) -->
-    <!-- <div class="modal fade" id="promoModal" tabindex="-1" aria-labelledby="promoModalLabel" aria-hidden="true">
-    </div> -->
-
-    <button class="btn btn-primary position-fixed start-0 bottom-50 p-3 pe-4 rounded-start rounded-1 shadow" type="button" data-bs-toggle="offcanvas" data-bs-target="#promoOffcanvas" aria-controls="promoOffcanvas">
-      <i class="fa-solid fa-tags"></i>
-    </button>
-
-    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="promoOffcanvas" aria-labelledby="promoOffcanvasLabel">
+    <!-- VIDEO -->
+    <video width="100%" autoplay muted>
+      <source src="videos/waste-video.mp4" type="video/mp4">
+      Video of stop taking a dump on the planet.
+    </video>
+  
+    <!-- FOLLOW ON INSTAGRAM -->
+    <div class="container">
+      <div class="row py-8 justify-content-center">
+        <div class="col-12 d-flex flex-column align-items-center py-8">
+          <h1 class="text-center mb-6 text-5r">#feelrephilled</h1>
+          <button type="button" class="btn btn-accent btn-outline-primary rounded-pill px-4 p-2 mb-5 m-lg-0">
+              Follow Us on Instagram<i class="fa-solid fa-arrow-right-long ms-4"></i>
+          </button>
+        </div>
+      </div>
+      
     </div>
 
 
-    <!-- MAIN END -->
+
+    <!-- PROMOTION -->
+    <button class="btn btn-primary-50 position-fixed start-0 bottom-0 p-3 mb-8 rounded-start rounded-4 shadow text-primary"
+      type="button" data-bs-toggle="offcanvas" data-bs-target="#promoOffcanvas" aria-controls="promoOffcanvas">
+      <i class="fa-solid fa-tags"></i>
+    </button>
+    <div class="offcanvas offcanvas-bottom bg-secondary rounded-bottom rounded-3" tabindex="-1" id="promoOffcanvas" aria-labelledby="promoOffcanvasLabel">
+      <!-- promotion content from load-promo.js -->
+    </div>
+
+
   </main>
 
 
   <!-- footer -->
   <footer id="footer-container" class="bg-primary mt-auto"></footer>
 
-  <!-- load nav / login / footer -->
+  <!-- load general html -->
   <script src="js/load-nav.js"></script>
   <script src="js/load-login.js"></script>
   <script src="js/load-cart.js"></script>
+  <script src="js/load-breadcrumb.js"></script>
   <script src="js/load-promo.js"></script>
   <script src="js/load-footer.js"></script>
-  
+
   <!-- js for this page -->
   
 

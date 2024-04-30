@@ -47,7 +47,8 @@ $teal: #20c997 !default;
 $cyan: #0dcaf0 !default;
 $pri: #203d3b !default;
 $sec: #efede9 !default;
-$accent: #eaef55 !default;
+$accent: #b09677 !default;
+// $accent: #eaef55 !default;
 // scss-docs-end color-variables
 
 // scss-docs-start colors-map
@@ -85,6 +86,7 @@ $theme-colors: (
   "primary": $primary,
   "secondary": $secondary,
   "accent": $accent,
+  "primary-50": #97AD8C,
   "gray-600": $gray-600,
   "success": $success,
   "info": $info,
@@ -520,9 +522,10 @@ $border-color: $gray-300 !default;
 
 // scss-docs-start border-radius-variables
 $border-radius: 0rem !default;
-$border-radius-sm: 1.25rem !default;
-$border-radius-lg: 2rem !default;
-$border-radius-xl: 6rem !default;
+$border-radius-sm: 0.5rem !default;
+$border-radius-lg: 0.75rem !default;
+$border-radius-xl: 1.5rem !default;
+$border-radius-xxl: 6rem !default;
 $border-radius-pill: 50rem !default;
 // scss-docs-end border-radius-variables
 
@@ -1418,7 +1421,7 @@ $badge-border-radius: $border-radius !default;
 // Modals
 
 // scss-docs-start modal-variables
-$modal-inner-padding: $spacer * 2 !default;
+$modal-inner-padding: $spacer * 2.25 !default;
 
 $modal-footer-margin-between: .5rem !default;
 
@@ -1430,7 +1433,8 @@ $modal-title-line-height: $line-height-base !default;
 $modal-content-color: null !default;
 $modal-content-bg: $white !default;
 $modal-content-border-color: rgba($black, .2) !default;
-$modal-content-border-width: $border-width !default;
+// $modal-content-border-width: $border-width !default;
+$modal-content-border-width: 0 !default;
 $modal-content-border-radius: $border-radius-lg !default;
 $modal-content-inner-border-radius: subtract($modal-content-border-radius, $modal-content-border-width) !default;
 $modal-content-box-shadow-xs: $box-shadow-sm !default;
@@ -1444,7 +1448,7 @@ $modal-header-border-width: $modal-content-border-width !default;
 $modal-footer-border-width: $modal-header-border-width !default;
 $modal-header-padding-y: $modal-inner-padding !default;
 $modal-header-padding-x: $modal-inner-padding !default;
-$modal-header-padding: $modal-header-padding-y $modal-header-padding-x !default; // Keep this for backwards compatibility
+$modal-header-padding: $modal-header-padding-y $modal-header-padding-x 0 $modal-header-padding-y !default; // Keep this for backwards compatibility
 
 $modal-sm: 300px !default;
 $modal-md: 500px !default;
