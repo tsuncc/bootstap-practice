@@ -24,12 +24,14 @@ ul, li, ol {
 .text-4r {
   font-size: 4rem;
   font-weight: bolder;
+  color: #203d3b;
 }
 
 
 .text-5r {
   font-size: 5rem;
   font-weight: bolder;
+  color: #203d3b;
 }
 
 
@@ -43,12 +45,7 @@ ul, li, ol {
   line-height: 3rem;
 }
 
-
 /* navigation styles */
-#nav-container {
-  height: 6rem;
-}
-
 #nav-container img {
   height: 2.5rem;
 }
@@ -57,10 +54,28 @@ ul, li, ol {
   letter-spacing: 2px;
 }
 
-.nav-ul li {
-  margin-left: 1.25rem;
+.nav-ul > li:not(:last-child) {
+  margin-right: 1.25rem;
 }
 
+.dropdown-menu {
+  display: none;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block; 
+  top: 100%; 
+}
+
+.navbar {
+  position: relative;
+}
+
+
+.nav-menu-styles > li > a:hover {
+  background-color: #97AD8C;
+  color: #203d3b;
+}
 
 
 /* cart */

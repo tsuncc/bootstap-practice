@@ -2,7 +2,7 @@
 <div class="container">
   <!-- brand -->
   <a class="navbar-brand" href="index.html">
-    <img src="imgs/phils-logo-nav.webp" alt="phils-logo">
+    <img src="imgs/phils-logo-nav.webp" alt="phils-logo" class="my-3">
   </a>
 
   <!-- rwd menu icon -->
@@ -13,23 +13,23 @@
 
   <!-- nav list -->
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav ms-auto nav-ul">
+    <ul class="navbar-nav ms-md-auto nav-ul">
       <!-- shop -->
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
           data-bs-toggle="dropdown" aria-expanded="false">
           SHOP
         </a>
-        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <li><a class="dropdown-item" href="products-all.html">All Products</a></li>
-          <li><a class="dropdown-item" href="products-skin-body.html">Skin & body</a></li>
-          <li><a class="dropdown-item" href="products-hair.html">Hair</a></li>
+        <ul class="dropdown-menu nav-menu-styles rounded-1 border-0 bg-secondary" aria-labelledby="navbarDropdownMenuLink">
+          <li><a class="dropdown-item pe-6" href="products-all.html">All Products</a></li>
+          <li><a class="dropdown-item pe-6" href="products-skin-body.html">Skin & body</a></li>
+          <li><a class="dropdown-item pe-6" href="products-hair.html">Hair</a></li>
         </ul>
       </li>
 
       <!-- about -->
       <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="about.html">ABOUT</a>
+        <a class="nav-link" aria-current="page" href="about.html">ABOUT</a>
       </li>
 
       <!-- member -->
@@ -39,11 +39,10 @@
 
       <!-- cart -->
       <li class="nav-item">
-        <a class="nav-link position-relative" data-bs-toggle="offcanvas" href="#cartOffcanvas" role="button" aria-controls="cartOffcanvas">
-          CART
-          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-            3
-            <span class="visually-hidden">unread messages</span>
+        <a class="nav-link" data-bs-toggle="offcanvas" href="#cartOffcanvas" role="button" aria-controls="cartOffcanvas">
+          <div class="d-inline-block  position-relative">
+          CART<span class="position-absolute top-0 start-100 mb-3 ms-3 translate-middle badge rounded-pill bg-accent">3
+          </div>
           </span>
         </a>
       </li>

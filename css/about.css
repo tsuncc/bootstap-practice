@@ -6,6 +6,11 @@
   background-size: cover;
 }
 
+.banner-title {
+  transform: translateY(-50%);
+}
+
+
 /* change bootstrap nav style */
 #aboutUs .nav-link {
   height: 3.5rem;
@@ -17,6 +22,11 @@
   background-color: #efede9 !important;
   color: #203d3b !important;
   border-right: 4px solid #203d3b;
+}
+
+
+#aboutUs .nav-link:hover {
+  background-color: rgb(176, 150, 119, 0.1);
 }
 
 @media screen and (max-width: 768px) {
