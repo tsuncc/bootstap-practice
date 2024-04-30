@@ -55,12 +55,12 @@
     <!-- ABOUT US BANNER END -->
 
 
-    <div class="container py-6 px-0 mb-8">
+    <div class="container mt-5 mb-8">
       <div class="row">
         <!-- TABS START -->
         <div class="d-flex flex-column flex-md-row align-items-start">
           <!-- tab buttons -->
-          <div class="nav nav-pills flex-row flex-md-column col-24 col-md-4 mb-5 mb-md-0" id="aboutUs" role="tablist"
+          <div class="nav nav-pills flex-row flex-md-column col-24 col-md-4 mb-5 mb-md" id="aboutUs" role="tablist"
             aria-orientation="vertical">
             <!-- tab 1 -->
             <button class="nav-link active flex-fill" id="aboutTab" data-bs-toggle="pill" data-bs-target="#aboutContent"
@@ -70,45 +70,80 @@
               type="button" role="tab" aria-controls="tabContent" aria-selected="false">FAQ's</button>
             <!-- tab 3 -->
             <button class="nav-link flex-fill" id="newsTab" data-bs-toggle="pill" data-bs-target="#newsTabContent"
-              type="button" role="tab" aria-controls="newsTabContent" aria-selected="false">NEWS</button>
+              type="button" role="tab" aria-controls="newsTabContent" aria-selected="false">News</button>
             <!-- tab 4 -->
             <button class="nav-link flex-fill" id="storeTab" data-bs-toggle="pill" data-bs-target="#storeTabContent"
               type="button" role="tab" aria-controls="storeTabContent" aria-selected="false">Stores</button>
           </div>
 
-          <div class="tab-content col-24 col-md-20" id="aboutTabContent">
-            <!-- ABOUT US START -->
+          <!-- ABOUT US START -->
+          <div class="tab-content col-24 col-md-20" id="aboutTabContent">  
             <div class="tab-pane fade show active ps-0 ps-md-7" id="aboutContent" role="tabpanel"
               aria-labelledby="about-tab-content">
               <!-- about us content start -->
-              <div class="col-24">
-                <h1 class="mb-5">About Us</h1>
+              <h1 class="mb-5">About Us</h1>
 
+              <div class="col-24">
                 <h3 class="mb-3">Super-Сharged Performance</h3>
                 <p class="mb-5">Our products are consciously created with your skin in mind. Powerful, plant based
                   ingredients combine into ultra gentle, multi-tasking formulas that work for all skin types and ages
                   that respect your skin's microbiome. Always vegan and Leaping Bunny certified cruelty-free.</p>
+              </div>
 
+              <div class="col-24 d-flex flex-wrap mb-5">      
+                <div class="col-12 col-sm-6 about-img-box overflow-hidden">
+                  <img src="imgs/about-01.webp" alt="Image of Phil's Product" class="h-100">
+                </div>
+                <div class="col-12 col-sm-6 about-img-box overflow-hidden">
+                  <img src="imgs/about-02.webp" alt="Image of Phil's Product" class="h-100">
+                </div>
+                <div class="col-12 col-sm-6 about-img-box overflow-hidden">
+                  <img src="imgs/about-03.webp" alt="Image of Phil's Product" class="w-100">
+                </div>
+                <div class="col-12 col-sm-6 about-img-box overflow-hidden">
+                  <img src="imgs/about-04.webp" alt="Image of Phil's Product" class="w-100">
+                </div>
+              </div>
+
+              <div class="col-24">
                 <h3 class="mb-3">Multi-Tasking Formulas</h3>
                 <p class="mb-5">Each Phil's product is formulated to help simplify your routine with multi-tasking
                   products that work hard for supercharged performance without harsh results.</p>
+              </div>
 
+              <div class="col-24 d-flex flex-wrap mb-5">      
+                <div class="col-12 col-sm-6 about-img-box overflow-hidden">
+                  <img src="imgs/about-05.webp" alt="Image of Phil's Product" class="h-100">
+                </div>
+                <div class="col-12 col-sm-6 about-img-box overflow-hidden">
+                  <img src="imgs/about-06.webp" alt="Image of Phil's Product" class="h-100">
+                </div>
+                <div class="col-12 col-sm-6 about-img-box overflow-hidden">
+                  <img src="imgs/about-07.webp" alt="Image of Phil's Product" class="w-100">
+                </div>
+                <div class="col-12 col-sm-6 about-img-box overflow-hidden">
+                  <img src="imgs/about-08.webp" alt="Image of Phil's Product" class="w-100">
+                </div>
+              </div>
+
+              <div class="col-24">
                 <h3 class="mb-3">Super-Сharged Performance</h3>
                 <p class="mb-5">Our products are consciously created with your skin in mind. Powerful, plant based
                   ingredients combine into ultra gentle, multi-tasking formulas that work for all skin types and ages
                   that respect your skin's microbiome. Always vegan and Leaping Bunny certified cruelty-free.</p>
+              </div>
 
+              <div class="col-24">
                 <h3 class="mb-3">Low Impact Packaging</h3>
                 <p class="mb-5">The beauty industry pours billions of pounds of plastic into landfills each year. At
                   Phil's, we believe in high impact results with low impact packaging, meaning we create with our
                   collective future at the forefront. All packaging is either infinitely rePhillable or curbside
                   recyclable. No plastic in sight.</p>
-
-              </div>
+              </div>            
               <!-- about us content end -->
             </div>
             <!-- ABOUT US END -->
-
+              
             <!-- FAQ START -->
             <div class="tab-pane fade ps-0 ps-md-7" id="tabContent" role="tabpanel" aria-labelledby="faqTab">
               <h1 class="mb-5">FAQ's</h1>
@@ -123,39 +158,75 @@
             <!-- NEWS START -->
             <div class="tab-pane fade ps-0 ps-md-7" id="newsTabContent" role="tabpanel" aria-labelledby="newsTab">
               <!-- about us content start -->
-              <div class="col-24">
-                <h1 class="mb-5">News</h1>
+              <h1 class="mb-5">News</h1>
+              <div class="col-24 d-flex flex-wrap justify-content-between">
+              
+                <div class="col-24 mb-6 bg-primary-50 d-flex flex-column flex-lg-row rounded-3 overflow-hidden overflow-hidden">            
+                  <div class="col-24 col-lg-10">
+                    <img src="imgs/about-01.webp" alt="Image of Phil's Products" class="object-cover">
+                  </div>
+                  <div class="col-24 col-lg-14 ps-5 d-flex flex-wrap align-items-center">
+                    <div>
+                      <h4 class="text-primary mb-3 mt-4 mt-lg-0">Infinitely Recyclable</h4>
+                      <a type="button" href="products-all.html"
+                        class="btn btn-accent btn-outline-primary rounded-pill px-4 p-2 mb-5 m-lg-0">
+                        SHOP ONLINE<i class="fa-solid fa-arrow-right-long ms-4"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="col-24 col-lg-7 mb-6">
+                  <div class=" position-relative overflow-hidden news-box rounded-3" href="#">
+                    <div class="position-absolute pt-4 ps-4">
+                      <p>Design to be <br> eco-friendly</p>
+                    </div>
+                    <a class="text-primary position-absolute end-0 bottom-0 mb-4 me-4">
+                      <i class="fa-solid fa-arrow-right-long"></i>
+                    </a>
+                    <div class="w-100">
+                      <img src="imgs/about-03.webp" alt="Image of Phil's Products" class="object-cover">
+                    </div>
+                  </div>
+                </div>
 
-                <h3 class="mb-3">Super-Сharged Performance</h3>
-                <p class="mb-5">Our products are consciously created with your skin in mind. Powerful, plant based
-                  ingredients
-                  combine into ultra gentle, multi-tasking formulas that work for all skin types and ages that respect
-                  your skin's
-                  microbiome. Always vegan and Leaping Bunny certified cruelty-free.</p>
+                <div class="col-24 col-lg-7 mb-6">
+                  <div class=" position-relative overflow-hidden news-box rounded-3">
+                    <div class="position-absolute pt-4 ps-4">
+                      <p>Design to be <br> eco-friendly</p>
+                    </div>
+                    <a class="text-primary position-absolute end-0 bottom-0 mb-4 me-4" href="#">
+                      <i class="fa-solid fa-arrow-right-long"></i>
+                    </a>
+                    <div class="w-100">
+                      <img src="imgs/about-02.webp" alt="Image of Phil's Products" class="object-cover">
+                    </div>
+                  </div>
+                </div>
 
-                <h3 class="mb-3">Multi-Tasking Formulas</h3>
-                <p class="mb-5">Each Phil's product is formulated to help simplify your routine with multi-tasking
-                  products that
-                  work hard for supercharged performance without harsh results.</p>
+                <div class="col-24 col-lg-7 mb-6">
+                  <div class=" position-relative overflow-hidden news-box rounded-3">
+                    <div class="position-absolute pt-4 ps-4">
+                      <p>Design to be <br> eco-friendly</p>
+                    </div>
+                    <a class="text-primary position-absolute end-0 bottom-0 mb-4 me-4" href="#">
+                      <i class="fa-solid fa-arrow-right-long"></i>
+                    </a>
+                    <div class="w-100">
+                      <img src="imgs/about-09.webp" alt="Image of Phil's Products" class="object-cover">
+                    </div>
+                  </div>
+                </div>
 
-                <h3 class="mb-3">Super-Сharged Performance</h3>
-                <p class="mb-5">Our products are consciously created with your skin in mind. Powerful, plant based
-                  ingredients
-                  combine into ultra gentle, multi-tasking formulas that work for all skin types and ages that respect
-                  your skin's
-                  microbiome. Always vegan and Leaping Bunny certified cruelty-free.</p>
 
-                <h3 class="mb-3">Low Impact Packaging</h3>
-                <p class="mb-5">The beauty industry pours billions of pounds of plastic into landfills each year. At
-                  Phil's, we
-                  believe in high impact results with low impact packaging, meaning we create with our collective future
-                  at the
-                  forefront. All packaging is either infinitely rePhillable or curbside recyclable. No plastic in sight.
-                </p>
+                
 
+              
+              
+              
               </div>
               <!-- about us content end -->
-            </div>
+              </div>
             <!-- NEWS END -->
 
             <!-- STORE START -->

@@ -45,3 +45,9 @@
   border-bottom: 1.5px solid #efede9;
 }
 
+
+
+/* tab 1 about us content */
+.about-img-box {
+  aspect-ratio: 1 / 1;
+}
