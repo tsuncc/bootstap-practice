@@ -26,25 +26,25 @@ const products = [
         usage: "Apply a generous amount to clean skin, gently smoothing it over face and neck in the morning and night.  Can also be used on hands."
     },
     {
-        id: 2,
-        name: "id 2",
-        category: "Skin & body",
-        price: "$24.99",
-        listImage: "imgs/products-1.webp",
-        images: ["imgs/products-1-1.webp", "imgs/products-1-2.webp", "imgs/products-1-3.webp"],
+        id: 3,
+        name: "Shaving Cream",
+        category: "Hair",
+        price: "$14.99",
+        listImage: "imgs/products-3.webp",
+        images: ["imgs/products-3-1.webp", "imgs/products-3-2.webp", "imgs/products-3-3.webp"],
         size: "4 FL OZ/ 118ML ALUMINUM TUBE",
-        ingredients: "100% Plant Squalane",
-        description: "So rich with moisturizing shea butter we should just call it a shea-ving cream. Niacinamide helps calm irritated skin.",
-        usage: "Twist top off capsule, squeeze onto fingertips and apply to face and neck. Capsule can be dissolved in hot water after use."
+        ingredients: "Water/Aqua, Glycerin, Myristic Acid, Stearic Acid",
+        description: "So rich with moisturizing shea butter we should just call it a shea-ving cream. Perfect glide and slide for a clean rinse and a precise shave..",
+        usage: "Apply a generous amount to your scruffy face and rub it in a circular motion until you've made a fat white beard over the area you want to shave."
     },
 
     {
-        id: 3,
-        name: "id 3",
+        id: 4,
+        name: "product name 4",
         category: "Skin & body",
         price: "$19.99",
-        listImage: "imgs/products-2.webp",
-        images: ["imgs/products-2-1.webp", "imgs/products-2-2.webp", "imgs/products-2-3.webp"],
+        listImage: "imgs/products-4.webp",
+        images: ["imgs/products-4-1.webp", "imgs/products-4-2.webp", "imgs/products-4-3.webp"],
         size: "2.7 FL OZ/80 ML ALUMINUM POD",
         ingredients: "Water/Aqua, Cetearyl Alcohol, Helianthus Annuus (Sunflower) Seed Oil Glyceryl Stearate Citrate",
         description: "The Daily Moisturizer was formulated to work both day and night to help simplify your routine.  With barrier protecting prebiotics, moisture locking hyaluronic acid, and soothing macula oil this super soothing formula has you covered 24/7.",
@@ -52,16 +52,68 @@ const products = [
     },
 
     {
-      id: 7,
-      name: "Shaving Cream",
-      category: "Hair",
-      price: "$14.99",
-      listImage: "imgs/products-3.webp",
-      images: ["imgs/products-3-1.webp", "imgs/products-3-2.webp", "imgs/products-3-3.webp"],
-      size: "4 FL OZ/ 118ML ALUMINUM TUBE",
-      ingredients: "Water/Aqua, Glycerin, Myristic Acid, Stearic Acid",
-      description: "So rich with moisturizing shea butter we should just call it a shea-ving cream. Perfect glide and slide for a clean rinse and a precise shave..",
-      usage: "Apply a generous amount to your scruffy face and rub it in a circular motion until you've made a fat white beard over the area you want to shave."
+        id: 5,
+        name: "product name 5",
+        category: "Skin & body",
+        price: "$19.99",
+        listImage: "imgs/products-5.webp",
+        images: ["imgs/products-5-1.webp", "imgs/products-5-2.webp", "imgs/products-5-3.webp"],
+        size: "2.7 FL OZ/80 ML ALUMINUM POD",
+        ingredients: "Water/Aqua, Cetearyl Alcohol, Helianthus Annuus (Sunflower) Seed Oil Glyceryl Stearate Citrate",
+        description: "The Daily Moisturizer was formulated to work both day and night to help simplify your routine.  With barrier protecting prebiotics, moisture locking hyaluronic acid, and soothing macula oil this super soothing formula has you covered 24/7.",
+        usage: "Apply a generous amount to clean skin, gently smoothing it over face and neck in the morning and night.  Can also be used on hands."
   },
+
+  {
+        id: 6,
+        name: "product name 6",
+        category: "Skin & body",
+        price: "$19.99",
+        listImage: "imgs/products-6.webp",
+        images: ["imgs/products-6-1.webp", "imgs/products-6-2.webp", "imgs/products-6-3.webp"],
+        size: "2.7 FL OZ/80 ML ALUMINUM POD",
+        ingredients: "Water/Aqua, Cetearyl Alcohol, Helianthus Annuus (Sunflower) Seed Oil Glyceryl Stearate Citrate",
+        description: "The Daily Moisturizer was formulated to work both day and night to help simplify your routine.  With barrier protecting prebiotics, moisture locking hyaluronic acid, and soothing macula oil this super soothing formula has you covered 24/7.",
+        usage: "Apply a generous amount to clean skin, gently smoothing it over face and neck in the morning and night.  Can also be used on hands."
+},
+
+{
+        id: 7,
+        name: "product name 7",
+        category: "Skin & body",
+        price: "$19.99",
+        listImage: "imgs/products-7.webp",
+        images: ["imgs/products-7-1.webp", "imgs/products-7-2.webp", "imgs/products-7-3.webp"],
+        size: "2.7 FL OZ/80 ML ALUMINUM POD",
+        ingredients: "Water/Aqua, Cetearyl Alcohol, Helianthus Annuus (Sunflower) Seed Oil Glyceryl Stearate Citrate",
+        description: "The Daily Moisturizer was formulated to work both day and night to help simplify your routine.  With barrier protecting prebiotics, moisture locking hyaluronic acid, and soothing macula oil this super soothing formula has you covered 24/7.",
+        usage: "Apply a generous amount to clean skin, gently smoothing it over face and neck in the morning and night.  Can also be used on hands."
+},
+
+{
+        id: 8,
+        name: "product name 8",
+        category: "Hair",
+        price: "$19.99",
+        listImage: "imgs/products-8.webp",
+        images: ["imgs/products-8-1.webp", "imgs/products-8-2.webp", "imgs/products-8-3.webp"],
+        size: "2.7 FL OZ/80 ML ALUMINUM POD",
+        ingredients: "Water/Aqua, Cetearyl Alcohol, Helianthus Annuus (Sunflower) Seed Oil Glyceryl Stearate Citrate",
+        description: "The Daily Moisturizer was formulated to work both day and night to help simplify your routine.  With barrier protecting prebiotics, moisture locking hyaluronic acid, and soothing macula oil this super soothing formula has you covered 24/7.",
+        usage: "Apply a generous amount to clean skin, gently smoothing it over face and neck in the morning and night.  Can also be used on hands."
+},
+
+{
+        id: 9,
+        name: "product name 9",
+        category: "Hair",
+        price: "$19.99",
+        listImage: "imgs/products-9.webp",
+        images: ["imgs/products-9-1.webp", "imgs/products-9-2.webp", "imgs/products-9-3.webp"],
+        size: "2.7 FL OZ/80 ML ALUMINUM POD",
+        ingredients: "Water/Aqua, Cetearyl Alcohol, Helianthus Annuus (Sunflower) Seed Oil Glyceryl Stearate Citrate",
+        description: "The Daily Moisturizer was formulated to work both day and night to help simplify your routine.  With barrier protecting prebiotics, moisture locking hyaluronic acid, and soothing macula oil this super soothing formula has you covered 24/7.",
+        usage: "Apply a generous amount to clean skin, gently smoothing it over face and neck in the morning and night.  Can also be used on hands."
+},
     
 ];
